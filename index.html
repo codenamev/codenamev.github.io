@@ -4,7 +4,21 @@ title: "V"
 ---
 
 <section class="content">
-  <h1 class="thin">POSTS</h1>
+  <h1 class="thin">Boom</h1>
+  <ul class="grid cs-style-3">
+    {% for starred_repo in site.starred_repos %}
+    <li>
+      <figure>
+      <img src="{{ starred_repo.image_url }}" alt="">
+        <figcaption>
+          <h3>{{ starred_repo.name }}</h3>
+          <span>{{ starred_repo.author }}</span>
+          <a href="{{ starred_repo.url }}">Check it out</a>
+        </figcaption>
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
   <ul class="listing">
     {% for post in site.posts %}
     <li>
