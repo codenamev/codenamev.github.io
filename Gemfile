@@ -6,3 +6,4 @@ gem 'jekyll'
 
 gem 'rmagick'
 
+gem 'octokit'

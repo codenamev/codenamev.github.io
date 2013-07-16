@@ -5,6 +5,7 @@ require 'time'
 require 'open-uri'
 require 'RMagick'
 require "digest/md5"
+require 'octokit'
 
 SOURCE = "."
 CONFIG = {
@@ -89,5 +90,3 @@ task :icons do
   puts "Cleaning up..."
   File.delete origin
 end
-
-
