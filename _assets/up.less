@@ -68,7 +68,7 @@
 @text-color: #A0A0A0;
 
 /* Cutsom fonts for headings */
-@headings-font-family: "Tondu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@heavy-headings-font-family: "Tondu", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-face {
   font-family: 'tondubeta';
   src: url('@{FontAwesomePath}/tondu_beta-webfont.eot');
@@ -89,11 +89,11 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 20px;
 }
 h2,h3,h4,h5,h6 {
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
   padding: 5px;
 }
-h1, h2 { font-family: 'Tondu' }
+h1, h2 { font-family: @heavy-headings-font-family }
 section.content {
   height: 100%;
   min-height: 100%;
@@ -173,6 +173,10 @@ ul.listing {
   }
 }
 
+div.navbar {
+  border-bottom: 1px solid #1f1f1f;
+}
+
 div.navbar,
 div.navbar a.brand {
   font-weight: 100;
@@ -197,11 +201,12 @@ div.navbar a.brand {
 
 .grid li {
   display: inline-block;
-  width: 367px;
   margin: 0;
   padding: 20px;
-  text-align: left;
   position: relative;
+  text-align: left;
+  vertical-align: top;
+  width: 367px;
 }
 
 .grid figure {
@@ -230,7 +235,7 @@ div.navbar a.brand {
   color: #fff;
   font-size: 18px;
   border-top: none;
-  border-bottom: 1px solid #606483;
+  border-bottom: 1px solid #1f1f1f;
 }
 
 .grid figcaption span:before {
@@ -269,16 +274,15 @@ div.navbar a.brand {
 }
 
 .cs-style-3 figcaption {
-  height: 100px;
+  height: 131px;
   width: 100%;
-  top: auto;
-  bottom: 0;
+  top: -100px;
   opacity: 0;
   text-align: left;
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
   -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
   transition: transform 0.4s, opacity 0.1s 0.3s;
@@ -288,10 +292,11 @@ div.navbar a.brand {
 .cs-style-3 figure.cs-hover figcaption {
   font-size: 15px;
   opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
+  top: -100px;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s;
