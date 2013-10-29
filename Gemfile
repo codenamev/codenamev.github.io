@@ -7,3 +7,4 @@ gem 'jekyll'
 gem 'rmagick'
 
 gem 'octokit'
+gem 'github-pages'
