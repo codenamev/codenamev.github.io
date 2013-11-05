@@ -6,12 +6,42 @@ require 'open-uri'
 require 'RMagick'
 require "digest/md5"
 require 'octokit'
+require 'date'
+require 'tmpdir'
+require 'jekyll'
 
 SOURCE = "."
 CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts")
 }
+
+desc "Generate blog files"
+task :generate do
+  Jekyll::Site.new(Jekyll.configuration({
+    "source"      => ".",
+    "destination" => "_site"
+  })).process
+end
+
+
+desc "Generate and publish blog to gh-pages"
+task :publish => [:generate] do
+  Dir.mktmpdir do |tmp|
+    system "mv _site/* #{tmp}"
+    system "git checkout gh-pages"
+    system "rm -rf *"
+    system "mv #{tmp}/* ."
+    message = "Site updated at #{Time.now.utc}"
+    system "git add ."
+    system "git commit -am #{message.shellescape}"
+    system "git push origin gh-pages --force"
+    system "git checkout master"
+    system "echo yolo"
+  end
+end
+
+task :default => :publish
 
 ###
 # Based on jekyll-bootstrap's Rakefile.

@@ -39,7 +39,7 @@ GEM
     octokit (2.5.1)
       sawyer (~> 0.5.1)
     posix-spawn (0.3.6)
-    pygments.rb (0.5.2)
+    pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rake (10.1.0)
