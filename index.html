@@ -1,17 +1,498 @@
----
-layout: layout
-title: "V"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>V</title>
 
-<section class="content">
+  <meta name="author" content="Valentino Ulysses Stoll" />
+  <meta name="description" content="Code by Valentino Ulysses Stoll." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
+    rel='stylesheet' type='text/css'>
+
+  <link href="/css/up.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Codename V</a>
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right hidden-print">
+          <li>
+            <a class="hidden-sm" href="#interests"
+              title="Code I follow">
+              <i class="icon-fire icon-large"></i>
+            </a>
+            <a class="visible-sm" href="#interests"
+              title="Code I follow">
+              <i class="icon-fire icon-large"></i>
+              Code I follow
+            </a>
+          </li>
+          <li>
+            <a class="hidden-sm" title="About me" href="/about">
+              <i class="icon-user icon-large"></i>
+            </a>
+            <a class="visible-sm" title="About me" href="/about">
+              <i class="icon-user icon-large"></i>
+              About me
+            </a>
+          </li>
+          <li>
+            <a class="hidden-sm" href="/atom.xml" title="Atom Feed">
+              <i class="icon-rss icon-large"></i>
+            </a>
+            <a class="visible-sm" href="/atom.xml" title="Atom Feed">
+              <i class="icon-rss icon-large"></i>
+              Atom Feed
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="content">
   <h1 class="thin">Boom</h1>
   <ul class="listing">
-    {% for post in site.posts %}
+    
     <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>April  4, 2013</span> <a href="/posts/new-up-version">New UP Version</a>
     </li>
-    {% endfor %}
+    
+    <li>
+      <span>December 13, 2012</span> <a href="/posts/up">Up</a>
+    </li>
+    
   </ul>
   <h2 id="interests">Code I'm following</h2>
-  {% gitstarred %}
+  <ul class="grid cs-style-3">          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>offline</h4>
+              <small>Automatically display online/offline indication to your users. #hubspot-open-source</small>
+              <figcaption>
+                <h3>offline</h3>
+                <span><a href="">HubSpot</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>ddslick</h4>
+              <small>A free light weight jQuery plugin that allows you to create a custom drop down with images and description.</small>
+              <figcaption>
+                <h3>ddslick</h3>
+                <span><a href="">prashantchaudhary</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>bootstrap-daterangepicker</h4>
+              <small>Date range picker component for Twitter Bootstrap</small>
+              <figcaption>
+                <h3>bootstrap-daterangepicker</h3>
+                <span><a href="">dangrossman</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>PredictionIO</h4>
+              <small>PredictionIO, a machine learning server for software developers and data engineers.</small>
+              <figcaption>
+                <h3>PredictionIO</h3>
+                <span><a href="">PredictionIO</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>odometer</h4>
+              <small>Beautiful CSS3 Number Transitions #hubspot-open-source</small>
+              <figcaption>
+                <h3>odometer</h3>
+                <span><a href="">HubSpot</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>NodeOS</h4>
+              <small></small>
+              <figcaption>
+                <h3>NodeOS</h3>
+                <span><a href="">NodeOS</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>gplus-photohunt-server-ruby</h4>
+              <small>Photohunt Ruby is a sample server that demonstrates how to build a social application that uses Google+ Sign-In, personalization, app activities, over-the-air install, and interactive posts.</small>
+              <figcaption>
+                <h3>gplus-photohunt-server-ruby</h3>
+                <span><a href="">googleplus</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>coder</h4>
+              <small></small>
+              <figcaption>
+                <h3>coder</h3>
+                <span><a href="">googlecreativelab</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>showterm.io</h4>
+              <small>The website for showterm!</small>
+              <figcaption>
+                <h3>showterm.io</h3>
+                <span><a href="">ConradIrwin</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>showterm</h4>
+              <small>The rubygem to upload to http://showterm.io</small>
+              <figcaption>
+                <h3>showterm</h3>
+                <span><a href="">ConradIrwin</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>xray-rails</h4>
+              <small>A development tool that reveals your UI's bones</small>
+              <figcaption>
+                <h3>xray-rails</h3>
+                <span><a href="">brentd</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>accumulo</h4>
+              <small>Mirror of Apache Accumulo</small>
+              <figcaption>
+                <h3>accumulo</h3>
+                <span><a href="">apache</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>psd.rb</h4>
+              <small>Parse Photoshop files in Ruby with ease</small>
+              <figcaption>
+                <h3>psd.rb</h3>
+                <span><a href="">layervault</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>practicing-ruby-manuscripts</h4>
+              <small>Collection of source manuscripts for publicly released Practicing Ruby articles</small>
+              <figcaption>
+                <h3>practicing-ruby-manuscripts</h3>
+                <span><a href="">elm-city-craftworks</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>trail-map</h4>
+              <small>Trails to help designers and developers learn various topics.</small>
+              <figcaption>
+                <h3>trail-map</h3>
+                <span><a href="">thoughtbot</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>kandan</h4>
+              <small>Kandan is an Open Source Alternative to HipChat</small>
+              <figcaption>
+                <h3>kandan</h3>
+                <span><a href="">kandanapp</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>hub</h4>
+              <small>hub helps you win at git.</small>
+              <figcaption>
+                <h3>hub</h3>
+                <span><a href="">github</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>CaptionHoverEffects</h4>
+              <small>A tutorial on how to create some subtle and modern caption hover effects.</small>
+              <figcaption>
+                <h3>CaptionHoverEffects</h3>
+                <span><a href="">codrops</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>dotfiles</h4>
+              <small></small>
+              <figcaption>
+                <h3>dotfiles</h3>
+                <span><a href="">crowdtap</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>bigben</h4>
+              <small>Threaded timer</small>
+              <figcaption>
+                <h3>bigben</h3>
+                <span><a href="">crowdtap</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>pollbooth</h4>
+              <small></small>
+              <figcaption>
+                <h3>pollbooth</h3>
+                <span><a href="">crowdtap</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>parachute</h4>
+              <small></small>
+              <figcaption>
+                <h3>parachute</h3>
+                <span><a href="">crowdtap</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>robust-redis-lock</h4>
+              <small>A robust redis lock</small>
+              <figcaption>
+                <h3>robust-redis-lock</h3>
+                <span><a href="">crowdtap</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>Flat-UI</h4>
+              <small>Flat UI - Design Framework (HTML, CSS, JS). Flat UI Kit is made on the basis of Twitter Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.</small>
+              <figcaption>
+                <h3>Flat-UI</h3>
+                <span><a href="">designmodo</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>Photoshop-CSS-Sprite</h4>
+              <small>Photoshop script to create a css sprite from a psd file.</small>
+              <figcaption>
+                <h3>Photoshop-CSS-Sprite</h3>
+                <span><a href="">euskadi31</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>Blur.js</h4>
+              <small>blur.js is a jQuery plugin that produces psuedo-transparent blurred elements over other elements.</small>
+              <figcaption>
+                <h3>Blur.js</h3>
+                <span><a href="">jakiestfu</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>Hyperlapse.js</h4>
+              <small>JavaScript hyper-lapse utility for Google Street View.</small>
+              <figcaption>
+                <h3>Hyperlapse.js</h3>
+                <span><a href="">TeehanLax</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>public_activity</h4>
+              <small>Easy activity tracking for models - similar to Github's Public Activity</small>
+              <figcaption>
+                <h3>public_activity</h3>
+                <span><a href="">pokonski</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>promiscuous</h4>
+              <small>Replicate data across your applications</small>
+              <figcaption>
+                <h3>promiscuous</h3>
+                <span><a href="">promiscuous-io</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="icon icon-github icon-4x"></i>
+              <h4>sass-mediaqueries</h4>
+              <small>It is a collection of useful media queries mixins for Sass. Great extension for compass or bourbon.</small>
+              <figcaption>
+                <h3>sass-mediaqueries</h3>
+                <span><a href="">paranoida</a></span>
+                <a href="">Check it out</a>
+              </figcaption>
+            </figure>
+          </li>
+</ul>
 </section>
+
+  </div>
+
+  <div id="footer" class="hidden-print">
+    <section class="meta">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-2 col-offset-4">
+            <a href="https://twitter.com/theawesomevibe">
+              <i class="icon icon-twitter icon-4x"></i>
+              <div>Follow me on Twitter.</div>
+            </a>
+          </div>
+          <div class="col col-lg-2 next">
+            <a href="https://github.com/codenamev">
+              <i class="icon icon-github icon-4x"></i>
+              <div>
+                See my github profile.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-27911694-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+  
+
+</body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="/js/up.js"></script>
+</html>
