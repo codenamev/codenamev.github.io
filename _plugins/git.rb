@@ -15,6 +15,7 @@ module Jekyll
       result = ""
 
       starred.each do |starred_repo|
+        repo_url = "https://github.com/#{starred_repo.full_name}"
         result << <<-HTML_END
           <li>
             <figure>
@@ -22,9 +23,9 @@ module Jekyll
               <h4>#{ starred_repo.name }</h4>
               <small>#{ starred_repo.description }</small>
               <figcaption>
-                <h3>#{ starred_repo.name }</h3>
-                <span><a href="#{ starred_repo.owner.html_url}">#{ starred_repo.owner.login }</a></span>
-                <a href="#{ starred_repo.html_url }">Check it out</a>
+                <h3><img src="http://www.gravatar.com/avatar/#{ starred_repo.owner.gravatar_id }" width="24" height="24" algin="left">#{ starred_repo.name }</h3>
+                <span><a href="https://github.com/#{ starred_repo.owner.login }" target="_blank">#{ starred_repo.owner.login }</a></span>
+                <a href="#{ repo_url }" target="_blank">Check it out</a>
               </figcaption>
             </figure>
           </li>
